@@ -10,7 +10,7 @@ import Admin from './components/admin-panel'
 
 function Rou() {
   return (
-    <>
+    <>nice
       <Nav />
       <Home />
       <Services />
