@@ -1,0 +1,125 @@
+:root{
+    --card_gover:#004861;
+    --text_color:#00A3CB;
+    --pages_bg_color:#f6fafd;
+    --sub_titles:#949191;
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-pics{
+    height: 19.33em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-pic{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#docP{
+    display: none;
+}
+#mchP{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.pic-bg{
+    height: 10em;
+    width: 28em;
+    background-color: var(--text_color);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.time-pic{
+    height: 20em;
+}
+.imgs{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgs button{
+    font-size: 3em;
+    color: white;
+    background-color: black;
+    border: 0;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+}
+.details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-titles{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.about-t1{
+    color: var(--text_color);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.about-t2{
+    color: var(--card_gover);
+    font-size: 2.7em;
+    font-weight: 600;
+    margin-bottom: -0.2em;
+}
+.about-btns-cont{
+    width: 80%;
+    display: flex;
+    
+}
+.about-btns{
+    font-size: 1.2em;
+    color: var(--card_gover);
+    background-color: white;
+    border: 0 solid var(--text_color);
+    margin: 2em 1em 0 0;
+}
+
+.about-btns:hover{
+    color: var(--text_color);
+    cursor: pointer;
+}
+.about-artical{
+    height: 7em;
+    width: 80%;
+    margin-top: 2em;
+}
+@media only screen and (max-width: 800px ){
+    .about{
+        height: 150vh;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-pics{
+        width: 80%;
+    }
+}

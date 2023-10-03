@@ -1,0 +1,18 @@
+.user-data-cont{
+    height: 3em;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-data-cont:hover{
+    background-color: aliceblue;
+}
+.user-data{
+    width: 10%;
+    color: #7794A7;
+    font-size: 1.1em;
+}
+#push-results:hover{
+    cursor: pointer;
+}

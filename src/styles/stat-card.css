@@ -1,0 +1,40 @@
+:root{
+    --card_gover:#004861;
+    --text_color:#00A3CB;
+    --pages_bg_color:#f6fafd;
+    --sub_titles:#949191;
+}
+.stat-card{
+    height: 100%;
+    width: 90%;
+    background-color: white;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+}
+.stat-card-ttl-cont{
+    height: 3em;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.patients-stat-logo{
+    height: 2.5em;
+    width: 2.5em;
+    color: var(--text_color);
+    background-color:#dcecf0;
+    border-radius: 50%;
+}
+.patients-stat{
+    width: 80%;
+    font-size: 2em;
+    font-weight: 500;
+}
+.stat-percent{
+    height: 3em;
+    width:80%;
+}

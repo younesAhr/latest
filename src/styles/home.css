@@ -1,0 +1,121 @@
+:root{
+    --card_gover:#004861;
+    --text_color:#00A3CB;
+    --pages_bg_color:#f6fafd;
+    --sub_titles:#949191;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--pages_bg_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artical{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.s1{
+    color: var(--text_color);
+    font-size: 1.05em;
+    font-weight: 600;
+}
+.s2,.s3{
+    color: var(--card_gover);
+    font-size: 3.2em;
+    font-weight: 600;
+}
+.s4{
+    color: var(--sub_titles);
+    width: 20em;
+    margin-top: 1.5em;
+}
+.more{
+    height: 3em;
+    width: 10em;
+    margin-top: 1.5em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: var(--text_color);
+    border-width: 0;
+    border-radius: 6px;
+}
+.login1{
+    display: none;
+    height: 3em;
+    width: 10em;
+    margin-top: 1.5em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: var(--text_color);
+    border-width: 0;
+    border-radius: 6px;
+}
+.more:hover{
+    cursor: pointer;
+}
+.pic-cont{
+    height: 33em;
+    width: 42%;
+    background-image: url('C:\Users\ynes\Desktop\test\src\pics\home-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg);
+    align-self: self-end;
+}
+
+@media only screen and (max-width: 800px ) and (min-width: 516px){
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    .pic-cont{
+        display: none;
+    }
+    .more{
+        display: none;
+    }
+    .login1{
+        display: block;
+    }
+    .artical{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 516px ){
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    .pic-cont{
+        display: none;
+    }
+    .more{
+        display: none;
+    }
+    .login1{
+        display: block;
+    }
+    .artical{
+        width: 80%;
+    }
+    .s1{
+        color: var(--text_color);
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+    .s2,.s3{
+        color: var(--card_gover);
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .s4{
+        color: var(--sub_titles);
+        width: 18em;
+        margin-top: 1.5em;
+    }
+}
