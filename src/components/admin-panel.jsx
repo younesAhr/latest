@@ -31,6 +31,22 @@ const data = [
 export default function Admin(){
     let arr ='azertyuiopqsdfghjklmwxcvbn0123456789';
     let [val,setVal]=useState('');
+    let [list,setList]=useState([]);
+    let [input1,setInput1]=useState('');
+    let [input2,setInput2]=useState('');
+    let [input3,setInput3]=useState('');
+    function addUser(name,age,gender){
+        let user={
+            id:Math.random(),
+            name:name,
+            age:age,
+            gender:gender
+        }
+        setList([...list,user]);
+        setInput1('');
+        setInput2('');
+        setInput3('');
+    }
     function pw(){
         let newPassword = '';
         for(let i=0;i<8;i++){
@@ -69,19 +85,37 @@ export default function Admin(){
                             <p className="user-data-ttl">Result</p>
                         </div>
                         <div className="users-cont">
-                        <User name='younes' age={19} gender='male' status='complete' />
-                        <User name='younes' age={19} gender='male' status='complete' />
-                        <User name='younes' age={19} gender='male' status='complete' />
+                            {
+                                list.map((user)=>(
+                                    <User key={list.id} name={user.name} age={user.age} gender={user.gender} status='complet' />
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
                 <div className="push-users-data-section" id='admin2'>
                     <form action="" className="push-users-data">
-                        <input type='text' className="users-data" placeholder='name' />
-                        <input type='text' className="users-data" placeholder='age' />
-                        <input type='text' className="users-data" placeholder='gender' />
+                        <input type='text' className="users-data" placeholder='name'
+                            value={input1} 
+                            onChange={()=>{
+                            setInput1(event.target.value)
+                            }}
+                        />
+                        <input type='text' className="users-data" placeholder='age' 
+                            value={input2}
+                            onChange={()=>{
+                            setInput2(event.target.value)
+                            }}
+                        />
+                        <input type='text' className="users-data" placeholder='gender' 
+                            value={input3} 
+                            onChange={()=>{
+                                setInput3(event.target.value)
+                            }}
+                        />
                         <div className="password-generate-cont">
-                            <input type='text' className="users-data" id='pwi' placeholder='password' value={val} 
+                            <input type='text' className="users-data" id='pwi' placeholder='password' 
+                                value={val} 
                                 onChange={()=>{
                                     setVal(event.target.value)
                                 }}
@@ -90,7 +124,11 @@ export default function Admin(){
                                 onClick={pw}
                             />
                         </div>
-                        <button className="users-data-submit">submit</button>
+                        <button className="users-data-submit" type='button'
+                            onClick={()=>{
+                                addUser(input1,input2,input3)
+                            }}
+                        >submit</button>
                     </form>
                 </div>
                 <div className="statistics-section" id='stats'>
@@ -119,21 +157,6 @@ export default function Admin(){
                         <Tooltip />
                         <Line type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
                         </LineChart>
-                        {/* <ResponsiveContainer className={'stat-bar'}>
-                            <BarChart
-                            width={350}
-                            height={250}
-                            data={data}
-                            >
-                                <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="name" />
-                                <YAxis />
-                                <Tooltip />
-                                <Legend />
-                                <Bar dataKey="pv" fill="#8884d8" />
-                                <Bar dataKey="uv" fill="#82ca9d" />
-                            </BarChart>
-                        </ResponsiveContainer> */}
                 </div>
             </div>
         </>
