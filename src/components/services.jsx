@@ -23,7 +23,7 @@ Card.propTypes = {
 export default function Services() {
   return (
     <>
-      <div className="stats-bar">
+      <div className="stats-bar" id="Ssb">
         <div className="stats-conts">
           <p className="nmb">10</p>
           <p className="stat">statistics</p>
