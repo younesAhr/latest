@@ -89,7 +89,7 @@
     text-align: center;
     justify-self: center;
 }
-@media only screen and (max-width: 800px ){
+@media only screen and (max-width: 800px )and (min-width: 450px){
     .contact{
         height: 110vh;
     }
@@ -116,5 +116,36 @@
     .map{
         width: 60%;
     }
-    
+}
+@media only screen and (max-width: 450px ){
+    .contact{
+        height: 60vh;
+    }
+    .info-cont{
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .info-cont1{
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #midd{
+        width: 9em;
+        margin: 0;
+    }
+    #last{
+        width: 5em;
+    }
+    .map{
+        height: 21.5vh;
+        width: 80%;
+    }
+    .copy-right{
+        width: 80%;
+    }
 }

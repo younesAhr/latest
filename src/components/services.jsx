@@ -22,21 +22,21 @@ Card.propTypes = {
 export default function Services(){
     return(
         <>
-            <div className="svc" id='svc'>
-                <div className="stats-bar">
-                    <div className="stats-conts">
-                        <p className='nmb'>10</p>
-                        <p className='stat'>statistics</p>
-                    </div>
-                    <div className="stats-conts">
-                        <p className='nmb'>10</p>
-                        <p className='stat'>statistics</p>
-                    </div>
-                    <div className="stats-conts">
-                        <p className='nmb'>10</p>
-                        <p className='stat'>statistics</p>
-                    </div>
+            <div className="stats-bar" id='Ssb'>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
                 </div>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+            </div>
+            <div className="svc" id='svc'>
                 <div className="svc-titles">
                     <p className="svc-t1">our services</p>
                     <p className="svc-t2">services for each case</p>

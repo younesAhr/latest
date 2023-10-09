@@ -8,11 +8,29 @@ export default function Home(){
                     <p className="s1">INTRODUCTING A NEW HEALTH CARE </p>
                     <p className="s2">Bringing Loving</p>
                     <p className="s3">Care to Health Care</p>
-                    <p className="s4">our skilled nurses are ready to serve you the best,just trust us we wont disapoint you.</p>
+                    <p className="s4">
+                        our skilled nurses are ready to serve you
+                        the best,just trust us we wont disapoint you,
+                        and will never make you feel regret .
+                    </p>
                     <button className="login1"><Link to="/login" className='login-link'>log in</Link></button>
                     <button className="more"><a href="#svc" style={{color:'white'}}>view all services</a></button>
                 </div>
                 <div className="pic-cont"></div>
+            </div>
+            <div className="stats-bar" id='Hsb'>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
             </div>
         </>
     )
