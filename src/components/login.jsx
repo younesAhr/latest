@@ -8,7 +8,7 @@ export default function Login(){
                         <div className="login-pic">
                             
                         </div>
-                        <h1 className="login-pic-ttl">welcome</h1>
+                        <h1 className="login-pic-ttl">WELCOME</h1>
                     </div>
                     <div className="login-details">
                         <h1 className="login-details-ttl">Your Health is Our Responsability</h1>
@@ -17,17 +17,17 @@ export default function Login(){
                                 <div className="input-data">
                                     <input type="text" required/>
                                     <div className="underline"></div>
-                                    <label>username</label>
+                                    <label>Username</label>
                                 </div>
                             </div>
                             <div className="wrapper">
                                 <div className="input-data">
                                     <input type="password" required/>
                                     <div className="underline"></div>
-                                    <label>password</label>
+                                    <label>Password</label>
                                 </div>
                             </div>
-                            <button className="login-submit">Log in</button>
+                            <button className="login-submit">LOGIN</button>
                         </form>
                     </div>
                 </div>

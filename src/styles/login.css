@@ -30,7 +30,7 @@
     width: 13em;
     border-radius: 50%;
     background-color: rgb(89, 89, 230);
-    background-image: url('C:\Users\ynes\Desktop\test\src\pics\login-page-pic.png');
+    background-image: url('../pics/login-page-pic.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x:center ;
@@ -63,6 +63,7 @@
     height: 2em;
     width: 6em;
     font-size: 1.7em;
+    font-weight:700;
     color: white;
     background-color: rgb(89, 89, 230);
     border-width: 0;

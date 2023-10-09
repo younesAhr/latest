@@ -55,6 +55,7 @@
     background-color: var(--text_color);
     border-width: 0;
     border-radius: 6px;
+    cursor: pointer;
 }
 .more:hover{
     cursor: pointer;
@@ -62,7 +63,7 @@
 .pic-cont{
     height: 33em;
     width: 42%;
-    background-image: url('C:\Users\ynes\Desktop\test\src\pics\home-pic.png');
+    background-image: url('../pics/home-pic.png');
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotateY(180deg);

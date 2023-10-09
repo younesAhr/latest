@@ -51,7 +51,7 @@
     height: 70vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .card{
@@ -64,12 +64,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: .4s ease-in;
 }
 .card:hover{
     background-color: var(--card_gover);
     color: white;
     cursor: pointer;
     box-shadow: var(--card_gover) 0px 3px 10px 0px;
+    transition: .4s ease-in;
 }
 .card-s1{
     font-size: 2em;

@@ -68,8 +68,7 @@ export default function About(){
                 </div>
                 <div className="details">
                     <div className="about-titles">
-                        <p className="about-t1">all about</p>
-                        <p className="about-t2">we are the best to take</p>
+                        <p className="about-t2">We are the best to take</p>
                         <p className="about-t2">care of you</p>
                     </div>
                     <div className="about-btns-cont">
