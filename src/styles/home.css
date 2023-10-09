@@ -25,7 +25,7 @@
 }
 .s2,.s3{
     color: var(--card_gover);
-    font-size: 3.2em;
+    font-size: 3.5em;
     font-weight: 600;
 }
 .s4{
@@ -69,8 +69,10 @@
     transform: rotateY(180deg);
     align-self: self-end;
 }
-
-@media only screen and (max-width: 800px ) and (min-width: 516px){
+#Hsb{
+    display: none;
+}
+@media only screen and (max-width: 800px ) and (min-width: 450px){
     ::-webkit-scrollbar{
         width: 0;
     }
@@ -82,12 +84,15 @@
     }
     .login1{
         display: block;
+    }
+    .home{
+        height: 100vh;
     }
     .artical{
         width: 80%;
     }
 }
-@media only screen and (max-width: 516px ){
+@media only screen and (max-width: 450px ){
     ::-webkit-scrollbar{
         width: 0;
     }
@@ -97,11 +102,23 @@
     .more{
         display: none;
     }
+    #Hsb{
+        display: flex;
+        height: 8vh;
+    }
+    .home{
+        height: 92vh;
+    }
     .login1{
+        height: 2em;
+        width: 7em;
         display: block;
+        font-size: 1.6em;
     }
     .artical{
+        height: 60%;
         width: 80%;
+        justify-content: center;
     }
     .s1{
         color: var(--text_color);

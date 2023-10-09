@@ -105,7 +105,7 @@
     width: 80%;
     margin-top: 2em;
 }
-@media only screen and (max-width: 800px ){
+@media only screen and (max-width: 800px ) and (min-width: 450px){
     .about{
         height: 150vh;
         flex-direction: column-reverse;
@@ -117,6 +117,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .about-pics{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 450px ){
+    .about{
+        height: 100vh;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-t1{
+        color: var(--text_color);
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .about-t2{
+        color: var(--card_gover);
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: -0.2em;
     }
     .about-pics{
         width: 80%;

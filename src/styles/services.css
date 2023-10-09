@@ -83,7 +83,7 @@
 }
 @media only screen and (min-width: 800px) and (max-width :1000px){
     .svc{
-        height: 110vh;
+        height: 100vh;
     }
     .card{
         width: 29%;
@@ -112,7 +112,7 @@
         width: 47%;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px)and (max-width :450px){
     .svc{
         height: 255vh;
     }
@@ -143,5 +143,38 @@
         color: var(--card_gover);
         font-size: 2.5em;
         font-weight: 600;
+    }
+}
+@media only screen and (max-width: 450px){
+    .svc{
+        height: 156vh;
+    }
+    .svc-titles{
+        height: 26vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+    .svc-t1{
+        color: var(--text_color);
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .svc-t2{
+        color: var(--card_gover);
+        font-size: 2.1em;
+        font-weight: 600;
+    }
+    .cards-cont{
+        height: 130vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #Ssb{
+        display: none;
     }
 }

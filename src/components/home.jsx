@@ -14,6 +14,20 @@ export default function Home(){
                 </div>
                 <div className="pic-cont"></div>
             </div>
+            <div className="stats-bar" id='Hsb'>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+                <div className="stats-conts">
+                    <p className='nmb'>10</p>
+                    <p className='stat'>statistics</p>
+                </div>
+            </div>
         </>
     )
 }
