@@ -50,9 +50,11 @@
 .links{
     color: black;
     margin: 0 1.5em 0 1.5em;
+    transition: .3s ease-out;
 }
 .links:hover{
     color: var(--text_color);
+    transition: .3s ease-out;
 }
 .login{
     height: 2em;
@@ -66,11 +68,13 @@
     border-radius: 5px;
     justify-self: flex-start;
     align-self: center;
+    transition: .3s ease-in;
 }
 .login:hover{
     cursor: pointer;
     color: var(--text_color);
     background-color: white;
+    transition: .3s ease-in;
 }
 .login:hover >.login-link{
     color: var(--text_color);

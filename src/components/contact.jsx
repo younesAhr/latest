@@ -21,19 +21,19 @@ export default function Contact(){
                     </div>
                     <div className="des-conts" id='midd'>
                         <p className="contact-ttl">
-                            company info
+                            Company info
                         </p>
                         <p className="contact-sub-ttl">
-                            services 
+                            Services 
                         </p>
                         <p className="contact-sub-ttl">
-                            about us 
+                            About us 
                         </p>
                         <p className="contact-sub-ttl">
-                            contact
+                            Contact
                         </p>
                         <p className="contact-sub-ttl">
-                            map
+                            Map
                         </p>
                     </div>
                     <div className="des-conts" id='last'>
