@@ -21,7 +21,7 @@ export default function Contact(){
                     </div>
                     <div className="des-conts" id='midd'>
                         <p className="contact-ttl">
-                            Company info
+                            clinic info
                         </p>
                         <p className="contact-sub-ttl">
                             Services 

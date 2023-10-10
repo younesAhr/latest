@@ -92,9 +92,7 @@
     border: 0 solid var(--text_color);
     margin: 2em 1em 0 0;
     transition: .2s ease-in;
-
 }
-
 .about-btns:hover{
     color: var(--text_color);
     cursor: pointer;
@@ -122,7 +120,7 @@
         width: 80%;
     }
 }
-@media only screen and (max-width: 450px ){
+@media only screen and (max-width: 450px ) and (min-width: 390px){
     .about{
         height: 100vh;
         flex-direction: column-reverse;
@@ -142,7 +140,35 @@
     }
     .about-t2{
         color: var(--card_gover);
-        font-size: 2em;
+        font-size: 1.8em;
+        font-weight: 600;
+        margin-bottom: -0.2em;
+    }
+    .about-pics{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 390px) and (min-width: 350px){
+    .about{
+        height: 120vh;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-t1{
+        color: var(--text_color);
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .about-t2{
+        color: var(--card_gover);
+        font-size: 1.5em;
         font-weight: 600;
         margin-bottom: -0.2em;
     }

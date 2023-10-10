@@ -117,7 +117,7 @@
         width: 60%;
     }
 }
-@media only screen and (max-width: 450px ){
+@media only screen and (max-width: 450px ) and (min-width: 390px){
     .contact{
         height: 60vh;
     }
@@ -144,6 +144,39 @@
     .map{
         height: 21.5vh;
         width: 80%;
+    }
+    .copy-right{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 389px) and (min-width: 350px) {
+    .contact{
+        height: 70vh;
+    }
+    .info-cont{
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .info-cont1{
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #midd{
+        width: 9em;
+        margin: 0;
+        margin-right: 0.5em ;
+    }
+    #last{
+        width: 5em;
+    }
+    .map{
+        height: 18vh;
+        width: 75%;
     }
     .copy-right{
         width: 80%;

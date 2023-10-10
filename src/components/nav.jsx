@@ -14,7 +14,7 @@ export default function Nav() {
     <>
       <header className="header">
         <div className="logo-cont">
-          <FaHeartbeat color="#00A3CB" fontSize="2.5em" />
+          <FaHeartbeat className="heart-beat"/>
           <p className="logo">Zeta agen</p>
         </div>
         <div

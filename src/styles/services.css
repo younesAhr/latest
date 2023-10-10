@@ -145,7 +145,7 @@
         font-weight: 600;
     }
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) and (min-width: 390px){
     .svc{
         height: 156vh;
     }
@@ -165,11 +165,47 @@
     }
     .svc-t2{
         color: var(--card_gover);
-        font-size: 2.1em;
+        font-size: 1.8em;
         font-weight: 600;
     }
     .cards-cont{
         height: 130vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card{
+        width: 60%;
+    }
+    #Ssb{
+        display: none;
+    }
+}
+@media only screen and (max-width: 390px) and (min-width: 350px){
+    .svc{
+        height: 170vh;
+    }
+    .svc-titles{
+        height: 30vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+    .svc-t1{
+        color: var(--text_color);
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .svc-t2{
+        color: var(--card_gover);
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .cards-cont{
+        height: 140vh;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;

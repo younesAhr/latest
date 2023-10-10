@@ -92,7 +92,7 @@
         width: 80%;
     }
 }
-@media only screen and (max-width: 450px ){
+@media only screen and (max-width: 450px )and (min-width :390px){
     ::-webkit-scrollbar{
         width: 0;
     }
@@ -129,6 +129,51 @@
     .s2,.s3{
         color: var(--card_gover);
         font-size: 2.5em;
+        font-weight: 600;
+    }
+    .s4{
+        color: var(--sub_titles);
+        width: 18em;
+        margin-top: 1.5em;
+    }
+}
+@media only screen and (max-width: 390px) and (min-width: 350px){
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    .pic-cont{
+        display: none;
+    }
+    .more{
+        display: none;
+    }
+    #Hsb{
+        display: flex;
+        height: 9vh;
+    }
+    .home{
+        height: 91vh;
+    }
+    .login1{
+        height: 2em;
+        width: 7em;
+        display: block;
+        font-size: 1.6em;
+    }
+    .artical{
+        height: 60%;
+        width: 80%;
+        justify-content: center;
+    }
+    .s1{
+        color: var(--text_color);
+        font-size: 0.9em;
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+    .s2,.s3{
+        color: var(--card_gover);
+        font-size: 2.3em;
         font-weight: 600;
     }
     .s4{
